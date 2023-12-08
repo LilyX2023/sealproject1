@@ -8,16 +8,31 @@ const baseURL = "https://api.harvardartmuseums.org/gallery"
 // Functions
 //************************ */
 // function to fetch the data
+
 function getFloorLayout(floorLevel) {
-    //construct our url
-    const url = `${baseURL}?floor=${floorLevel}&apikey=${apikey}`
-    //fetch from the url
-    fetch(url)
-    .then((res) => {return res.json()})
-    .then((data) => {
-        renderRoom(data)
-        console.log(data)
-    })
+    if (floorLevel === "1" || floorLevel === "2" || floorLevel ==="3"|| floorLevel === "4"|| floorLevel==="5"){
+        const url = `${baseURL}?floor=${floorLevel}&apikey=${apikey}`
+        //fetch from the url
+        fetch(url)
+        .then((res) => {return res.json()})
+        .then((data) => {
+            renderRoom(data)
+            console.log(data)
+        })
+        
+    } else {
+        const $roomdiv = $('ul.roomList')
+        $roomdiv.html(`<h4>The entry is invalid. The museum only has 1 ~ 5 level </h4>`)
+    }
+//     //construct our url
+//     const url = `${baseURL}?floor=${floorLevel}&apikey=${apikey}`
+//     //fetch from the url
+//     fetch(url)
+//     .then((res) => {return res.json()})
+//     .then((data) => {
+//         renderRoom(data)
+//         console.log(data)
+//     })
 }
 
 function getTheme(id) {

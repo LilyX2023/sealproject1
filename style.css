@@ -11,10 +11,10 @@ header {
     box-sizing: border-box; /* Optional: Include padding and border in the element's total width and height */
   }
 
-.form2 input[type="text"] {
-width: 80%; /* Adjust the width as needed */
-padding: 10px; /* Optional: Add padding for better appearance */
-box-sizing: border-box; /* Optional: Include padding and border in the element's total width and height */
+  .form2 input[type="text"] {
+    width: 80%; /* Adjust the width as needed */
+    padding: 10px;/* Optional: Add padding for better appearance */
+    box-sizing: border-box; /*Optional: Include padding and border in the element's total width and height */
 }
   
 button {

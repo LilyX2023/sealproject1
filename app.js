@@ -33,27 +33,26 @@ function getTheme(id) {
 //function that render the galleryid and name to the dom
 function renderRoom(room){
     //grab the div.room
-        console.log(room.records)
-        const roomdiv = document.querySelector("ul.roomList")
+        const $roomdiv = $('ul.roomList')
         //alter the html inside the div
         let a = room.records.map((d) => {
             return `<li>${d.gallerynumber} - ${d.name}</li>`
         })
-        roomdiv.innerHTML = a
+        $roomdiv.html(a)
     }
 
 function renderDetail(id){
-    const roomDetails = document.querySelector('.roomD')
+    const $roomDetails = $('.roomD')
     //roomDetails.innerHTML = `
     //<h3>${id.theme} - ${id.labeltext}</h3>
     //`
     if ( id.theme === null || id.labeltext === null){
-        roomDetails.innerHTML = `
-        <h3>Sorry, the space is not a gallery or not open to the public at the moment</h3>`
+        $roomDetails.html (`<h3>Sorry, the space is not a gallery or not open to the public at the moment</h3>`)
     } else {
-        roomDetails.innerHTML = `
-        <h3>${id.theme} - ${id.labeltext}</h3>
-    `
+        $roomDetails.html(`
+        <h3>${id.theme}</h3> 
+        <h4>${id.labeltext}</h4>`)
+
     }
 }
 

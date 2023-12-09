@@ -166,11 +166,11 @@ The website comprises five parts:
 
 #### Desktop View
 
-![My Desktop View](https://i.imgur.com/W8UenSJ.png)
+![My Desktop View](https://i.imgur.com/iUnIsmb.png)
 
 #### Mobile View
 
-![My Mobile View](https://i.imgur.com/W8UenSJ.png)
+![My Mobile View](https://i.imgur.com/VgXjpJy.png)
 
 ## Schedule of Work
 

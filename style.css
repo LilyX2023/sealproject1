@@ -25,7 +25,9 @@ header {
     background-color: #A41034;
     color: white;
 }
-
+h1{
+    padding: 10;
+}
 .form input[type="text"] {
     position: relative;
     left: 10px;

@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+*{
+
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100%;
+    height: -webkit-fill-available;
+    position: relative;
+    padding-bottom: 6.74rem;
+}
+
+html{
+    height:100%;
+    height: -webkit-fill-available;
+}
 
 header {
     text-align: center;
@@ -6,22 +27,38 @@ header {
 }
 
 .form input[type="text"] {
+    position: relative;
+    left: 10px;
+    top:15px;
     width: 80%; /* Adjust the width as needed */
     padding: 10px; /* Optional: Add padding for better appearance */
     box-sizing: border-box; /* Optional: Include padding and border in the element's total width and height */
   }
 
   .form2 input[type="text"] {
+    position: relative;
+    left:10px;
+    top: 15px;
     width: 80%; /* Adjust the width as needed */
     padding: 10px;/* Optional: Add padding for better appearance */
     box-sizing: border-box; /*Optional: Include padding and border in the element's total width and height */
 }
   
 button {
+    position: relative;
+    top: 15px;
+    left:10px;
     padding: 10px;
+    margin-top: 15px;
     /* Add any additional styling for the button if needed */
   }
 
+
 ul {
     list-style-type: none;
+}
+
+.roomD {
+    position:relative;
+    left: 10px;
 }
